@@ -1,0 +1,88 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+
+}
+
+.wrapper{
+    display:flex;
+    width:100%;
+    height:50%;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom:1%;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+
+
+
+}
+
+.flexitem {
+
+    width:100%;
+    height:50%;
+    margin:0.5%;
+  
+   
+}
+
+.flexitem > img{
+    width:100%;
+    height: 80%;
+    border-radius:1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.flexitem > img:hover{
+    display:flex;
+    transform: scale(200%,150%);
+    
+
+}
+
+.horsename{
+    background-color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size:1rem;
+    height:50%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+      .wrapper{
+        flex-direction: column;
+      }
+      .flexContainer{
+        width:100%;
+      }
+}
+  
+
+
+
+
+
+
+
+
+
