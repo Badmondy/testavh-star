@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 html,
 body {
@@ -17,13 +18,87 @@ body {
     background-size: cover;
 
 }
+#logo{
+    position:absolute;
+    width: 15%;
+    margin-top:-1%;
+    
+}
 
-.navigationMenu{
+.newsWrapper{
     display:flex;
+    width:100%;
+    height:100%;
+    margin-top:5%;
+    align-self:center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    font-family:'Roboto',sans-serif;
+    font-weight: 600;
+  
+
+}
+.newsitem1{
+    background-color:#d5d683;
+    width:40%;
+    height:50%;
+    margin-bottom:1%;
+    border:solid white .15rem;
+    border-radius:.4rem;
+    padding:1%;
+
+}
+
+.newsitem1 > h2,.newsitem2 > h2,.newsitem3 > h2{
+    font-family:'Courier New', Courier, monospace;
+   
+}
+.newsitem2{
+    background-color:#8d8e61;
+    width:40%;
+    height:50%;
+    margin-bottom:1%;
+    border:solid white .15rem;
+    border-radius:.4rem;
+    padding:1%;
+}
+
+.newsitem3{
+    background-color:#D5D683;
+    width:40%;
+    height:50%;
+    border:solid white .15rem;
+    border-radius:.4rem;
+    margin-bottom:1%;
+    padding:1%;
+}
+#videoyoutube{
+    margin-left:5%;
+}
+#travstar{
+    width:30%;
+    height:60%;
+    border-radius:3em;
+    border:solid .1rem white;
+}
+#v75{
+    width:5%;
+    border-radius:.4rem;
+}
+.spantext{
+    margin-top:1%;
+}
+.navigationMenu{
+
+    display:flex;
+    position: relative;
+    top:2.5%;
     flex-direction:row;
     justify-content: center;
     font-family: 'Lato', sans-serif;
     align-items: center;
+    text-align:center;
     font-weight: 700;
     width:100%;
     height:20%;
@@ -40,18 +115,17 @@ body {
 
     background-color: rgb(213, 214, 132);
     width:10%;
-    height:10%;
+    height:30%;
 /*     box-shadow: 5px 10px  rgba(0, 0, 0, 0.618); */
     border-radius:1em;
     margin:0.5%;
     font-size:100%;
-    padding:1%;
-    text-align: center;
     border:.1rem solid white;
 }
 .option:hover{
     background-color: rgb(133, 135, 60);
-    box-shadow: 5px 10px  rgba(0, 0, 0, 0.223);
+    color:white;
+    
 
 }
 .wrapper{
@@ -61,26 +135,14 @@ body {
     flex-direction: column;
 }
 
-#rubrikhorses{
-    position: absolute;
-    top:16%;
-    width:95%;
-    left:0;
-    margin-left:auto;
-    margin-right:auto;
-    right:0;
-    text-align:center;
-    height:90%;
-    border:0.2em double rgb(255, 255, 255);
-   
-}
+
 .rubrik{
     display:flex;
     width:100%;
     margin-top:1%;
     font-size:200%;
     font-weight:500;
-    border-bottom:double .4rem rgb(8, 8, 8);
+    border-bottom:double .4rem rgb(60,73,81);
     font-family: 'Noto Serif Georgian', serif;
     justify-content: center;
     color:#1c1c12f3;
@@ -90,7 +152,6 @@ body {
     width:90%;
     height: 50;
     margin-top:2%;
-
     flex-direction: row;
     align-self: center;
 
@@ -115,7 +176,7 @@ body {
     font-family: 'Combo', cursive;
     font-size:95%;
     border-radius: 0.5rem;
-    background-color: rgb(252, 253, 193);
+    background-color: rgb(213, 214, 132);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     word-wrap: break-word;
     border:.1rem solid white;
@@ -132,7 +193,7 @@ body {
     width:100%;
     font-size:95%;
     border-radius: 0.5rem;
-    background-color: rgb(252, 253, 193);
+    background-color: rgb(213, 214, 132);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     word-wrap: break-word;
 }
@@ -141,6 +202,7 @@ body {
     padding-top:5%;
     width:90%;
     height: 60%;
+    border-radius:.4rem;
 
 
 } 
@@ -149,8 +211,15 @@ body {
     padding-top:5%;
     width:90%;
     height: 60%;
+    border-radius:.4rem;
 }
 
+.horseCard:hover{
+    transform: scale(150%);
+}
+.horseCard2:hover{
+    transform: scale(150%);
+}
 
 .horseCard > p{
     margin: .4rem 0 0 0;
@@ -179,22 +248,6 @@ body {
 
 
 
-/*Animation horse running*/
-.animationhorse{
-    margin-top:1%;
-    display:flex;
-    width:100%;
-    height:20%;
-    justify-content: center;
-    align-items: center;
-    animation: curtain 10s 1s 10 left;
-
-    
-}
-#animation{
-    width:8%;
-}
-
 
 
 @media only screen and (max-width: 700px) {
@@ -203,22 +256,34 @@ body {
             height:100%;
 
     }
+    .newsitem3{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+    }
       .flexContainer{
         flex-direction: column;
-       
+        margin-right:5%;
 
       }
       .flexContainer2{
         flex-direction: column;
-
+        margin-right:5%;
   
       }
     .option{
-        font-size:10%;
-        padding:6%;
-       
+        height:20%;
+        font-size:60%;
+        
     }
-
+    .horseCard:hover{
+        transform: scale(100%);
+    }
+    .horseCard2:hover{
+        transform: scale(100%);
+    }
     .horseCard,.horseCard2{
         margin:1%;
     }
